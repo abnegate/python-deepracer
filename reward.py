@@ -1,7 +1,6 @@
 # Speed ranges
-SPEED_0_RANGE = range(0, 2)
-SPEED_1_RANGE = range(2, 4)
-SPEED_2_RANGE = range(4, 6)
+SPEED_1_RANGE_MIN = 0.33
+SPEED_2_RANGE_MIN = 0.67
 # Reward factors for having a higher speed
 REWARD_SPEED_0_FACTOR = 1.0
 REWARD_SPEED_1_FACTOR = 1.3
@@ -72,11 +71,11 @@ def process_steering(reward, steering_angle):
     return reward
 
 def process_speed(reward, speed):
-    if speed in SPEED_0_RANGE:
+    if speed <= SPEED_1_RANGE_MIN:
         reward *= REWARD_SPEED_0_FACTOR
-    elif speed in SPEED_1_RANGE:
+    elif SPEED_1_RANGE_MIN < speed <= SPEED_2_RANGE_MIN:
         reward *= REWARD_SPEED_1_FACTOR
-    elif speed in SPEED_2_RANGE:
+    elif speed > SPEED_2_RANGE_MIN:
         reward *= REWARD_SPEED_2_FACTOR
 
     return reward
