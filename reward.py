@@ -20,7 +20,7 @@ REWARD_CENTER_DISTANCE_3_FACTOR = 0.1
 # Desired max steering angle
 MAX_STEERING_ANGLE = 22.5
 # Reward factor for oversteering
-REWARD_OVERSTEERING_FACTOR = 0.8
+REWARD_OVERSTEERING_FACTOR = 0.85
 
 # Reward factors for being on the track
 REWARD_ON_TRACK_FACTOR = 1.5
