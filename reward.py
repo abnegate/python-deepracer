@@ -2,7 +2,6 @@
 SPEED_0_RANGE = range(0, 2)
 SPEED_1_RANGE = range(2, 4)
 SPEED_2_RANGE = range(4, 6)
-
 # Reward factors for having a higher speed
 REWARD_SPEED_0_FACTOR = 1.0
 REWARD_SPEED_1_FACTOR = 1.3
@@ -12,7 +11,6 @@ REWARD_SPEED_2_FACTOR = 1.8
 CENTER_DISTANCE_0_PERCENT = 0.25
 CENTER_DISTANCE_1_PERCENT = 0.5
 CENTER_DISTANCE_2_PERCENT = 0.75
-
 # Reward factors for being closer to the center of the track
 REWARD_CENTER_DISTAMCE_0_FACTOR = 1.3
 REWARD_CENTER_DISTANCE_1_FACTOR = 1.8
@@ -20,11 +18,9 @@ REWARD_CENTER_DISTANCE_2_FACTOR = 1.0
 REWARD_CENTER_DISTANCE_3_FACTOR = 0.1
 
 # Desired max steering angle
-MAX_STEERING_ANGLE = 20
-
+MAX_STEERING_ANGLE = 22.5
 # Reward factor for oversteering
 REWARD_OVERSTEERING_FACTOR = 0.8
-
 
 # Reward factors for being on the track
 REWARD_ON_TRACK_FACTOR = 1.5
