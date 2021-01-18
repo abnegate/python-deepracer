@@ -1,6 +1,6 @@
 # Speed ranges
-SPEED_1_RANGE_MIN = 0.34
-SPEED_2_RANGE_MIN = 0.67
+SPEED_1_RANGE_MIN = 1.33
+SPEED_2_RANGE_MIN = 2.67
 # Reward factors for having a higher speed
 REWARD_SPEED_0_FACTOR = 1.0
 REWARD_SPEED_1_FACTOR = 1.3
